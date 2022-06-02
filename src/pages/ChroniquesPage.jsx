@@ -9,7 +9,6 @@ const ChroniquesPage = () => {
 		fetch('http://localhost:3333/chroniques')
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
 				setPosts(data.reverse());
 			});
 	}, []);

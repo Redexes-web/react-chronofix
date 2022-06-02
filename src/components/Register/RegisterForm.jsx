@@ -115,8 +115,8 @@ const RegisterForm = () => {
 						value={confirmPassword}
 					/>
 				</div>
-				<div class="d-grid gap-2 col-6 mx-auto mt-3">
-					<button class="btn btn-primary btn-lg" type="submit">
+				<div className="d-grid gap-2 col-6 mx-auto mt-3">
+					<button className="btn btn-primary btn-lg" type="submit">
 						S'inscrire
 					</button>
 				</div>

@@ -17,7 +17,6 @@ const ChroniquePage = () => {
 		fetch(`http://localhost:3333/chroniques/${chroniqueId}`)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data.id);
 				if (data.id) {
 					setChronique(data);
 				} else {
@@ -35,7 +34,6 @@ const ChroniquePage = () => {
 		}
 	}, [chronique]);
 	useEffect(() => {
-		console.log(user);
 		if (user && chronique.author === user.id) {
 			setisOwner(true);
 		}
@@ -48,7 +46,6 @@ const ChroniquePage = () => {
 				'Content-Type': 'application/json',
 			},
 		}).then((response) => {
-			console.log(response.status);
 			if (response.status === 200) {
 				window.location.reload();
 			}
@@ -64,7 +61,7 @@ const ChroniquePage = () => {
 					{editMode ? (
 						<>
 							<EditForm chronique={chronique} />
-							<div class="d-grid gap-2 col-6 mx-auto">
+							<div className="d-grid gap-2 col-6 mx-auto">
 								<button
 									className="btn btn-danger btn-lg mt-2"
 									onClick={() => {

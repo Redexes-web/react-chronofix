@@ -11,7 +11,6 @@ const Profile = () => {
 		fetch('http://localhost:3333/chroniques?author=' + user.id)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
 				setPosts(data.reverse());
 			});
 	}, []);
@@ -38,44 +37,33 @@ const Profile = () => {
 												className="img-fluid img-thumbnail mt-4 mb-2"
 												style={{ width: '150px', zIndex: '1' }}
 											/>
-											<button
+											{/* <button
 												type="button"
 												className="btn btn-outline-dark"
-												data-mdb-ripple-color="dark"
 												style={{ zIndex: '1' }}
 											>
 												Edit profile
-											</button>
+											</button> */}
 										</div>
 										<div className="ms-3" style={{ marginTop: '130px' }}>
 											<h5>
 												{user.firstName} {user.lastName}
 											</h5>
 											{user.username && <p>@{user.username}</p>}
-											<p>New York</p>
 										</div>
 									</div>
 									<div className="card-body p-4 text-black">
-										<div className="mb-5">
-											<p className="lead fw-normal mb-1">About</p>
-											<div
-												className="p-4"
-												style={{ backgroundColor: '#f8f9fa' }}
-											>
-												<p className="font-italic mb-1">Web Developer</p>
-												<p className="font-italic mb-1">Lives in New York</p>
-												<p className="font-italic mb-0">Photographer</p>
-											</div>
-										</div>
 										<div className="d-flex justify-content-between align-items-center mb-4">
 											<p className="lead fw-normal mb-0">Chroniques récentes</p>
 											<p className="mb-0">
-												<button
-													className="text-muted btn btn-link"
-													onClick={() => setShowAll(!showAll)}
-												>
-													{showAll ? 'Voir moins' : 'Voir plus'}
-												</button>
+												{posts.length > 4 ? (
+													<button
+														className="text-muted btn btn-link"
+														onClick={() => setShowAll(!showAll)}
+													>
+														{showAll ? 'Voir moins' : 'Voir plus'}
+													</button>
+												) : null}
 											</p>
 										</div>
 										<Chroniques chroniques={posts} limit={showAll ? null : 4} />

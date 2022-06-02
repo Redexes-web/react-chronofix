@@ -43,7 +43,6 @@ const EditForm = ({ chronique }) => {
 				createdAt: chronique.createdAt,
 			}),
 		}).then((response) => {
-			console.log(response.status);
 			if (response.status === 200) {
 				setAuthor('');
 				setTitle('');

@@ -11,7 +11,6 @@ const AllChroniques = () => {
 			.then((response) => response.json())
 			.then((data) => {
 				setChroniques(data);
-				console.log(chroniques);
 			});
 	}, []);
 	return (

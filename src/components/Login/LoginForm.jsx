@@ -5,12 +5,6 @@ const LoginForm = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState('');
-	// useEffect(() => {
-	// 	console.log(localStorage.getItem('user'));
-	// 	if (localStorage.getItem('user') !== null) {
-	// 		window.location.href = '/profile';
-	// 	}
-	// }, []);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		fetch('http://localhost:3333/login', {
