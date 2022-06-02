@@ -1,0 +1,83 @@
+{
+  "chroniques": [
+    {
+      "title": "rgdd",
+      "author": 3,
+      "genre": "adventure",
+      "content": "sdgsdf\nsdfsdv\nsdvsdfvsf\nsdvsfvsfv",
+      "createdAt": "3/5/2022",
+      "id": 1
+    },
+    {
+      "title": "dfgd",
+      "author": 3,
+      "genre": "adventure",
+      "content": "rgdrtghth\n\n\n\ndfgdfg",
+      "createdAt": "3/5/2022",
+      "id": 2
+    },
+    {
+      "title": "tsst",
+      "genre": "adventure",
+      "content": "setsetset",
+      "author": 3,
+      "createdAt": "4/5/2022",
+      "id": 3
+    },
+    {
+      "title": "yuiyuoy",
+      "genre": "adventure",
+      "author": 3,
+      "content": "uyuoyo",
+      "createdAt": "4/5/2022",
+      "id": 4
+    },
+    {
+      "title": "fth",
+      "genre": "adventure",
+      "author": 3,
+      "content": "fhfgth",
+      "createdAt": "4/5/2022",
+      "id": 5
+    },
+    {
+      "title": "azerrtyiooppdfgder re tertert r tertertertert er t ert ",
+      "author": 3,
+      "genre": "adventure",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt sodales auctor. Duis eget volutpat nisi. Donec fringilla facilisis pellentesque. Donec convallis luctus sapien, sit amet molestie leo commodo gravida. Suspendisse id vestibulum nunc, sed mattis turpis. Donec ac orci et metus eleifend venenatis vitae quis tortor. Sed faucibus nisl a cursus sodales. Integer purus enim, ultricies at consequat non, euismod et nibh.",
+      "createdAt": "4/5/2022",
+      "id": 7
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "author": 3,
+      "genre": "adventure",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt sodales auctor. Duis eget volutpat nisi. Donec fringilla facilisis pellentesque. Donec convallis luctus sapien, sit amet molestie leo commodo gravida. Suspendisse id vestibulum nunc, sed mattis turpis. Donec ac orci et metus eleifend venenatis vitae quis tortor. Sed faucibus nisl a cursus sodales. Integer purus enim, ultricies at consequat non, euismod et nibh.",
+      "createdAt": "4/5/2022",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "email": "redexes75@hotmail.fr",
+      "password": "$2a$10$Fv1hS5VvHYGCSbWrRvS17OHpjg8tXq9l0Zqv4QziCf3p8MHWucm8a",
+      "firstName": "Enzo",
+      "lastName": "VALFORT",
+      "id": 1
+    },
+    {
+      "email": "admin@oziriis.com",
+      "password": "$2a$10$Yc/f7V.7XjqRqToowAHKSut/TryXscHKT/BNSjesDjGaX9nL9Kt6G",
+      "firstName": "Enzo",
+      "lastName": "VALFORT",
+      "id": 2
+    },
+    {
+      "email": "test@test.test",
+      "password": "$2a$10$8388KjqEbSd1miEmCluWQeCcBSZ8KjPJw0ygtlZrcSQZ5K16FJDEq",
+      "firstName": "Enzo",
+      "lastName": "VALFORT",
+      "id": 3
+    }
+  ]
+}
