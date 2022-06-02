@@ -78,7 +78,14 @@ const ChroniquePage = () => {
 					) : (
 						<>
 							<h1 className="display-1">{chronique.title}</h1>
-							<p>{chronique.content}</p>
+							<div>
+								{chronique.content &&
+									chronique.content
+										.split('\n')
+										.map((item, index) =>
+											item === '' ? <br /> : <p key={index}>{item}</p>
+										)}
+							</div>
 						</>
 					)}
 
