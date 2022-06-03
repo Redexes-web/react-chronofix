@@ -22,7 +22,7 @@ const LoginForm = () => {
 			})
 			.then((data) => {
 				data && localStorage.setItem('user', JSON.stringify(data));
-				window.location.href = '/profile';
+				data ? (window.location.href = '/profile') : null;
 			});
 	};
 	return (
