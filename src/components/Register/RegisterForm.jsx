@@ -48,6 +48,7 @@ const RegisterForm = () => {
 				setPassword('');
 				setConfirmPassword('');
 				alert('Inscription réussie');
+				window.location.href = '/login';
 			} else {
 				alert('Une erreur est survenue');
 			}
